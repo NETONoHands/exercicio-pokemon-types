@@ -1,6 +1,6 @@
 import { json } from "express";
 import { typeWeaknesses } from "./typesDicionary";
-import { Pokemon, PokemonResponse } from "./types";
+import type { Pokemon, PokemonResponse } from "./types";
 import { readFile } from "node:fs/promises";
 
 const dbPath = "./src/data/pokemons.json";

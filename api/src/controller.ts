@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Pokemon, PokemonResponse } from "./types";
+import type { Pokemon, PokemonResponse } from "./types";
 import { getTypeWeaknesses, readJson } from "./services";
 import { typeWeaknesses } from "./typesDicionary";
 
