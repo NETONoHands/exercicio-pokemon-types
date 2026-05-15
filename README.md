@@ -1,86 +1,66 @@
-Neste exercício, você vai desenvolver uma aplicação web completa, onde seu objetivo será consumir uma API que fornece dados de Pokémons e, com base nesses dados, aplicar uma lógica para descobrir as fraquezas de cada um deles.
+# Pokédex (Gen 1) — React + TypeScript
 
-## Você irá praticar:
+🔗 **Live Demo (GitHub Pages):**
+https://netonohands.github.io/exercicio-pokemon-types/
 
-- Conexão entre backend e frontend  
-- Criação e consumo de endpoints locais ou online (como preferir)  
-- Requisições HTTP (GET)  
-- Manipulação de objetos e arrays em TypeScript  
-- Organização de código em aplicações fullstack (Next.js ou similar)  
+Uma Pokédex da **1ª geração** com **busca por nome** e filtros por **Tipo** e **Fraqueza**.
+O objetivo do projeto é praticar integração front/back, tipagem com TypeScript e uma UI clara para explorar dados.  
 
-## Sobre a API
+---
 
-A API já está pronta e disponível no GitHub caso deseje usar. Ela fornece uma lista de Pokémons em formato JSON, contendo informações como nome, ID e tipos da primeira geração.
+## ✨ Funcionalidades
 
-### Você pode:
+- Explorar a **1ª geração (151 Pokémons)**  
+- Busca por nome  
+- Filtros por **Tipo** e por **Fraqueza**  
+- Cards exibindo **Tipos** e **Fraquezas** de cada Pokémon  
 
-- Clonar o repositório e rodar localmente;  
-- Usar o link da API local como fonte de dados no frontend;  
-- Ou ainda usar uma API online como a [https://pokeapi.co/](https://pokeapi.co/), [https://pokedexapi.com/](https://pokedexapi.com/) ou [https://pogoapi.net/](https://pogoapi.net/)  
+---
 
-**Exemplo de dados da API (entrada):**
+## 🧰 Tecnologias
 
-```json
-[
-  { "id": 1, "name": "pikachu", "types": ["electric"] },
-  { "id": 2, "name": "gabite", "types": ["dragon", "ground"] }
-]
-```
+### Frontend
+- **React** + **TypeScript**
+- **Vite** (build e dev server)
 
-## Sua Tarefa
+### Backend
+- **Node.js** + **Express**
+- **Axios** (requisições)
+- **CORS** (configuração de acesso)
 
-Crie uma aplicação web que:
+---
 
-- Consuma os dados da API local (endpoint `GET /api/pokemons`)  
-- Para cada Pokémon, calcule suas fraquezas com base nos seus tipos  
-- Exiba na tela: nome, tipos e fraquezas  
-- Permita filtrar os Pokémons por:
-  - Nome (input de busca)
-  - Tipo (select/dropdown)
-  - Fraqueza (select/dropdown)
+## 🏗️ Estrutura do projeto
 
-**Exemplo de saída esperada no frontend:**
+- `web/` → frontend (React/Vite)
+- `api/` → backend (Express/Node)
 
-```json
-{
-  "name": "pikachu",
-  "types": ["electric"],
-  "weakness": ["ground"]
-}
-```
+---
 
-## Clone o repositório
+## ▶️ Rodando localmente
 
-Navegue até o diretório onde você deseja clonar o repositório:
-
+### 1) Backend (API)
 ```bash
-cd /caminho/para/seu/diretorio
-```
-
-Execute o comando `git clone` com o URL do repositório:
-
-```bash
-git clone https://github.com/Wander06/exercicio-pokemon-types.git
-```
-
-Isso criará uma cópia local do repositório no seu computador.
-
-Depois de clonar o repositório, entre no diretório do projeto:
-
-```bash
-cd exercicio-pokemon-types
-```
-
-Lembre-se de usar o comando:
-
-```bash
+cd api
 npm install
-```
+npm run dev
 
-Para instalar as dependências necessárias, e:
-
+### 2) Frontend (WEB)
 ```bash
-npm run start
-```
+cd web
+npm install
+npm run dev
 
-Para inicializar a aplicação.
+♿ Notas de Acessibilidade (work in progress)
+Este projeto busca manter uma interface clara e navegável.
+Sugestões e melhorias de acessibilidade são bem-vindas (teclado, foco visível, labels, semântica, etc).
+
+🤝 Colaboração / Créditos
+Projeto desenvolvido em colaboração com meu amigo Peu Wantuir (GitHub: Peu-Wan).
+Obrigado pela parceria e pelas contribuições no desenvolvimento!
+
+📌 Próximos passos (ideias)
+
+Melhorias de acessibilidade (foco, semântica, estados de loading/erro)
+Melhorias de performance e UX
+Mais filtros e detalhes por Pokémon
