@@ -8,4 +8,4 @@ interface PokemonResponse extends Pokemon {
   weakness: string[];
 }
 
-export { Pokemon, PokemonResponse };
+export type { Pokemon, PokemonResponse };
