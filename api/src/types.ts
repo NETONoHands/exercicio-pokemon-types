@@ -4,7 +4,10 @@ type Pokemon = {
   types: string[];
 };
 
-interface PokemonResponse extends Pokemon {
+type PokemonResponse = {
+  id: number;
+  name: string;
+  types: string[];
   weakness: string[];
 }
 
